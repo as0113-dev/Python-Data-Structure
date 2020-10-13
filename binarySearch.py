@@ -34,3 +34,5 @@ def recursiveBinarySearch(array, key, high, low):
 
 print(binarySearch([1,5,10,15,20], 20))
 print(recursiveBinarySearch([1,5,10,15,20], 20, 4, 0))
+
+#how can I fix this code to where it can be more efficiently tested by multiple users?

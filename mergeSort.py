@@ -10,13 +10,11 @@ def mergeSort(array):
     rightSplit = array[mid:]
 
     #recursively call the splitting of array
-    leftArray = mergeSort(leftSplit)
-    rightArray = mergeSort(rightSplit)
+    leftSplit = mergeSort(leftSplit)
+    rightSplit = mergeSort(rightSplit)
 
     #final step call the merge "helper" function that builds the array and sort them
-    return merge(leftArray, rightArray)
-
-
+    return merge(leftSplit, rightSplit)
 
 def merge(leftArr, rightArr):
     #the array that we return in the end after filling it up
@@ -37,7 +35,6 @@ def merge(leftArr, rightArr):
     return result
 
 
-
-list1 = [4,3,2,1]
+list1 = [22,15,10,18,100]
 fixed_list1 = mergeSort(list1)
 print(fixed_list1)
